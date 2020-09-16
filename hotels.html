@@ -1,17 +1,180 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
-  </head>
-  <body>
-    <header>
-      <nav>
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Седона</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="main-header">
+      <nav class="main-header__menu">
         <ul>
-          <li><a href="#">Информация</a></li>
-          <li><a href="#">Фото и видео</a></li>
-          <li><a href="#">Карта штата</a></li>
+          <li><a href="info.html">Информация</a></li>
+          <li><a href="photos.html">Фото и видео</a></li>
+          <li><a href="map.html">Карта штата</a></li>
           <li><a href="hotels.html">Гостиницы</a></li>
         </ul>
       </nav>
+      <div class="main-header__logo">
+        <a href="index.html">
+          <img src="img/logo.svg" width="138" height="70" alt="Логотип сайта городка Седона">
+        </a>
+      </div>
     </header>
+    <section class="cost-calculator__img-muddy">
+      <!--Фоновое изображение-->
+      <h1>Калькулятор стоимости проживания</h1>
+      <form action="https://echo.htmlacademy.ru/" method="post">
+        <ul class="cost-calculator">
+          <li class="cost-calculator__item">
+            <h2>Инфраструктура:</h2>
+            <label>
+              <input type="checkbox" name="swimming" checked>Бассейн
+            </label>
+            <br>
+            <label>
+              <input type="checkbox" name="parking">Парковка
+            </label>
+            <br>
+            <label>
+              <input type="checkbox" name="wi-fi">Wi-Fi
+            </label>
+          </li>
+          <li class="cost-calculator__item">
+            <h2>Тип жилья:</h2>
+            <label>
+              <input type="checkbox" name="hotel" checked>Гостиница
+            </label>
+            <br>
+            <label>
+              <input type="checkbox" name="motel" checked>Мотель
+            </label>
+            <br>
+            <label>
+              <input type="checkbox" name="apartments" checked>Апартаменты
+            </label>
+          </li>
+          <li class="cost-calculator__item">
+            <h2>Стоимость в сутки (р):</h2>
+            <div class="cost-calculator__rublescount">
+              <span class="cost-calculator__rublescount-min">от 0</span>
+              <span class="cost-calculator__rublescount-max">до 3000</span>
+            </div>
+            <div class="cost-calculator__range">
+              <input type="range" name="rublescount" min="50" max="3000" step="50">
+            </div>
+            <p>
+              <input type="submit" value="Показать">
+            </p>
+          </li>
+        </ul>
+      </form>
+    </section>
+    <section class="cost-calculator__sorting">
+      <h2>Результат поиска жилья в Седоне</h2>
+      <span>Найдено:</span>
+      <span>3</span>
+      <div class="sorting-items">
+        <h3>Сортировка:</h3>
+        <input type="text" value="По цене">
+        <input type="text" value="По типу">
+        <input type="text" value="По рейтингу">
+      </div>
+      <div class="sorting-items-toggle">
+        <!--кнопки-псевдоэлементы-треугольники-->
+      </div>
+    </section>
+    <section class="cost-calculator__result">
+      <ul>
+        <li class="cost-calculator__result-hotel">
+          <div class="cost-calculator__img-hotel">
+            <img src="img/amara.png" width="135" height="90" alt="Фото отеля Amara Resort & Spa">
+          </div>
+          <div class="cost-calculator__result-hotel-detailed">
+            <a href="#">Amara Resort & Spa
+            </a>
+            <p>Гостиница</p>
+            <p>от 4000 р.</p>
+            <input type="submit" value="Подробнее">
+            <input type="submit" value="Показать">
+          </div>
+          <div class="cost-calculator__rating">
+            <span>
+              <!--звезды-->
+            </span>
+            <span>Рейтинг:8,5</span>
+          </div>
+        </li>
+        <li class="cost-calculator__result-motel">
+          <div class="cost-calculator__img-motel">
+            <img src="img/desert.png" width="135" height="90" alt="Фото мотеля Desert Quail Inn">
+          </div>
+          <div class="cost-calculator__result-motel-detailed">
+            <a href="#">Desert Quail Inn
+            </a>
+            <p>Мотель</p>
+            <p>от 3000 р.</p>
+            <input type="submit" value="Подробнее">
+            <input type="submit" value="Показать">
+          </div>
+          <div class="cost-calculator__rating">
+            <span>
+              <!--звезды-->
+            </span>
+            <span>Рейтинг:8,9</span>
+          </div>
+        </li>
+        <li class="cost-calculator__result-apartment">
+          <div class="cost-calculator__img-apartment">
+            <img src="img/villas.png" width="135" height="90" alt="Фото апартаментов Villas at Poco Diablo">
+          </div>
+          <div class="cost-calculator__result-apartment-detailed">
+            <a href="#">Villas at Poco Diablo
+            </a>
+            <p>Апартаменты</p>
+            <p>от 2000 р.</p>
+            <input type="submit" value="Подробнее">
+            <input type="submit" value="Показать">
+          </div>
+          <div class="cost-calculator__rating">
+            <span>
+              <!--звезды-->
+            </span>
+            <span>Рейтинг:9.2</span>
+          </div>
+        </li>
+      </ul>
+    </section>
+    <footer>
+      <section class="footer-contacts">
+        <h2>Контакты</h2>
+        <a href="#">#visitSEDONA</a>
+        <p>Тел: <a href="tel:+74956660166">+7(495) 666-01-66</a></p>
+      </section>
+      <section class="footer-social">
+        <h2>Мы в соцсетях</h2>
+        <ul>
+          <li>
+            <a href="#">Твиттер</a>
+          </li>
+          <li>
+            <a href="#">Фейсбук</a>
+          </li>
+          <li>
+            <a href="#">Вконтакте</a>
+          </li>
+        </ul>
+      </section>
+      <p>Website by
+      <div>
+        <!--для иконки-->
+      </div>
+      <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
+    </footer>
+  </div>
+</body>
+
+</html>
