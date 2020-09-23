@@ -1,0 +1,294 @@
+/* Fonts */
+@font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 400;
+    src: local("PT Sans"), local("PTSans-Regular"), url("../fonts/ptsans.woff2") format("woff2"),
+        url("../fonts/ptsans.woff") format("woff");
+}
+
+@font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 700;
+    src: local("PT Sans Bold"), local("PTSans-Bold"), url("../fonts/ptsansbold.woff2") format("woff2"),
+        url("../fonts/ptsansbold.woff") format("woff");
+}
+
+/* custom*/
+:root {
+    --basic-black: #000000;
+    --basic-white: #ffffff;    
+    --basic-blue: #81b3d2;
+    --sorting-grey: #666666;
+    --shadow-grey: #f2f2f2;
+    --feature-grey: #eeeeee;
+    --footer-grey: 255, 255, 255, 0.9;
+    --active-grey: A9A9A9;
+
+    --special: #766357;
+}
+
+/*style*/
+.page {
+    height: 100%;
+}
+
+.page-body {
+    max-width: 1280px; /*todo: https://up.htmlacademy.ru/htmlcss/29/demos/4271#7 min-width: ;*/
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-size: 14px;
+    line-height: 21px;
+    color: var(--basic-black);
+    text-transform: uppercase;
+    background-color: var(--shadow-grey); /*todo: как узнать цвет?*/
+    background-repeat: no-repeat;
+    font-weight: 400;
+}
+
+a {    
+    text-decoration: none;/*todo: дать class="link"? */
+    color: var(--basic-black);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    background-repeat: no-repeat;
+}
+
+li {
+    list-style: none; 
+}
+
+.wrapper {
+    background-color: var(--basic-white);
+    max-width: 1200px; /*todo: https://up.htmlacademy.ru/htmlcss/29/demos/4271#7 min-width: ;*/
+    margin: 0 auto;
+}
+
+/* header menu*/
+.main-navigation {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 56px;
+    margin: 0;
+}
+
+.main-navigation-item {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 35%;
+}
+
+.main-navigation-item a {
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 700;
+    color: var(--basic-black);
+}
+
+/* logo */
+.main-header-logo {    
+    position: relative;
+    width: 30%; 
+}
+
+.main-header-logo img {
+    position: absolute;  /*todo: при сжатии лого не остается на месте */
+    top: 0;
+    left: 78px;
+}
+
+/* features__img-main *//*todo: глюк в гугле при открытой консоли - полоса */
+.features__main-img {
+    margin: 0 auto;
+    height: 509px;
+    background-color: var(--basic-white); /*это не точно*/
+    background-repeat: no-repeat;
+    background-image: url("../img/Shape.png"), url("../img/welcome.png"), url("../img/bg_photo.png");
+    background-position: bottom, center, center;
+}
+
+/* features__header */
+.features__title {
+    width: 100%;
+    height: 216px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.features__title h1 {
+    display: block;
+    max-width: 470px;
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 700;
+    margin: 43px auto 16px; /*todo: дроби в отсупах? */
+}
+
+.features__title p {
+    font-size: 14px;
+    line-height: 26px;
+    color: var(--feature-black);
+    margin: 0 auto 51px; /*todo: подогнать позже, меняются цифры*/
+}
+
+/* features__list */
+.features__list {
+    display: flex;
+    flex-wrap: wrap;    
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.features__item-big,
+.features__recommendation {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0;
+}
+
+.feature-item-middle {
+    width: 33.33%;  /*todo: можно так? */
+    height: 256px;
+    background-color: var(--basic-blue);
+}
+
+.features__item-big:first-child .features__middle-img {
+    background-image: url("../img/house.png"); /*todo: сжать картинку  */
+    width: 66.66%;
+    height: 256px;
+}
+
+.features__item-big:nth-child(2) .features__middle-img {
+    background-image: url("../img/bridge.png"); /*todo: сжать картинку  */
+    width: 66.66%;
+    height: 256px; /*todo: flex-direction включить и в разметке второй по счету  картинку поставить? */
+    width: 66.66%;
+}
+
+.features__recommendation-item {
+    width: 33.33%;
+    height: 256px;
+    margin-bottom: 74px;
+}
+
+.features__list h2 {
+    display: block;
+    max-width: 150px;
+    font-size: 21px;
+    line-height: 21px;
+    text-align: center;
+    margin: 43px auto 25px; /*todo: подогнать позже, меняются цифры*/
+}
+
+.features__list p,
+.features__list span {
+    display: block;
+    max-width: 301px;
+    font-size: 14px;
+    line-height: 21px;
+    color: var(--feature-black);
+    margin: 15px auto 50px; /*todo: подогнать позже, меняются цифры*/
+}
+
+.feature-item-middle h2,
+.feature-item-middle p,
+.feature-item-middle span {
+    /* todo: можно сократить запись?*/
+    color: var(--basic-white);
+}
+
+.features__item-small {
+    width: 33.33%;
+    height: 256px;
+    background-color: var(--feature-grey);
+}
+
+.features__item-small p {
+   max-width: 258px;
+   
+}
+.features__icon {
+    max-width: 75px;
+    height: 72px;
+}
+
+/* search */
+ .search {
+    width: 100%;
+    text-align: center;   
+}
+
+.search-header {
+    width: 100%;
+    height: 290px;
+}
+
+.search h2 {
+    display: block;    
+    font-size: 30px;
+    line-height: 24px;
+    margin: 58px auto 40px;
+}
+
+.search p {
+    display: block;    
+    width: 435px ;
+    height: 40px;
+    font-size: 14px;
+    line-height: 24px;
+    margin: 0 auto;
+}
+
+.search__map {  /*todo: видео: интерактивная карта, которая лежит под прозрачным подвалом и формой поиска */
+    display: block;
+    background-image: url(../img/map.png);  /* todo: разобраться с форматом и сжатием*/
+    width: 100%;
+    height: 474px;
+} 
+
+.footer {
+    display: flex;   
+    height: 120px;
+    background-color: var(--footer-grey);
+}
+.footer section {
+    width: 33.33%;    
+    text-align: center;
+    margin: 15px auto;
+}
+
+.footer h2,
+.search__modal h2 {
+    display: none;
+}
+
+.footer-contacts {
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 700;
+}
+
+.footer-copy {
+    font-size: 14px;
+    line-height: 26px;
+}
+
+.main-navigation-item a:focus { /*todo: как узнать цвет голубого при наведении? */
+    color: var(--basic-blue);
+}
+
+.main-navigation-item a:hover { 
+        color: var(--active-grey);
+
+}
+.main-navigation-item a:active { 
+    color: var(--active-grey);
+}

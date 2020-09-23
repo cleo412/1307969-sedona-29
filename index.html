@@ -1,61 +1,68 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 
 <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body class="page-body">
     <div class="wrapper">
         <header class="main-header">
-            <nav class="main-header__menu">
-                <ul>
-                    <li><a href="info.html">Информация</a></li>
-                    <li><a href="photos.html">Фото и видео</a></li>
-                    <li><a href="map.html">Карта штата</a></li>
-                    <li><a href="hotels.html">Гостиницы</a></li>
-                </ul>
+            <nav class="main-navigation">
+                <div class="main-navigation-item">
+                    <a href="info.html">Информация</a>
+                    <a href="photos.html">Фото и видео</a>
+                </div>
+                <div class="main-header-logo">
+                    <img src="img/logo.svg" width="138" height="70" alt="Логотип города Седона">
+                </div>
+                <div class="main-navigation-item">
+                    <a href="map.html">Карта штата</a>
+                    <a href="hotels.html">Гостиницы</a>
+                </div>
             </nav>
-            <div class="main-header__logo">
-                <img src="img/logo.svg" width="138" height="70" alt="Логотип сайта городка Седона">
-            </div>
         </header>
         <section class="features">
-            <div class="features__img-main">
+            <div class="features__main-img">
                 <!--для фонового изображения Седоны-->
             </div>
-            <div class="features__header">
+            <div class="features__title">
                 <h1>Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
                 <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
             </div>
             <ol class="features__list">
                 <li class="features__item-big">
-                    <h2>Настоящий городок</h2>
-                    <span>- №1 -</span>
-                    <p>Седона - не аттракцион для туристов, там течёт своя жизнь</p>
-                    <div class="features__img-big">
-                        <!--для фонового изображения здания-->
+                    <div class="feature-item-middle">
+                        <h2>Настоящий городок</h2>
+                        <span>- №1 -</span>
+                        <!--todo:причина 1-->
+                        <p>Седона - не аттракцион для туристов, там течёт своя жизнь</p>
                     </div>
-                    <ul class="features__container">
-                        <li class="features__icon">
-                            <div>
-                                <!--для иконки-->
+                    <div class="features__middle-img">
+                        <!--фото здания-->
+                    </div>
+                    <ul class="features__recommendation">
+                        <!--todo:это не aside ?-->
+                        <li class="features__recommendation-item">
+                            <div class="features__icon">
+                                <!--иконка-дом-->
                             </div>
                             <h2>Жилье</h2>
                             <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
                         </li>
-                        <li class="features__icon">
-                            <div>
-                                <!--для иконки-->
+                        <li class="features__recommendation-item">
+                            <div class="features__icon">
+                                <!--иконка-бургер-->
                             </div>
                             <h2>Еда</h2>
                             <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
                         </li>
-                        <li class="features__icon">
-                            <div>
-                                <!--для иконки-->
+                        <li class="features__recommendation-item">
+                            <div class="features__icon">
+                                <!--иконка-сувенир-->
                             </div>
                             <h2>Сувениры</h2>
                             <p>Не только китайского, но и местного производства!</p>
@@ -63,38 +70,46 @@
                     </ul>
                 </li>
                 <li class="features__item-big">
-                    <h2>Но там есть мост Дьявола</h2>
-                    <span>- №2 -</span>
-                    <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
-                    <div class="features__img-big">
-                        <!--для фонового изображения моста-->
+                    <div class="features__middle-img">
+                        <!--фото моста-->
+                    </div>
+                    <div class="feature-item-middle">
+                        <h2>Но там есть мост Дьявола</h2>
+                        <span>- №2 -</span>
+                        <!--todo:причина 2-->
+                        <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
                     </div>
                 </li>
                 <li class="features__item-small">
                     <h2>Небольшая площадь</h2>
                     <span>- №3 -</span>
+                    <!--todo:причина 3-->
                     <p>Все достопримечательности находятся очень близко</p>
                 </li>
                 <li class="features__item-small">
                     <h2>Красивая дорога</h2>
                     <span>- №4 -</span>
+                    <!--todo:причина 4-->
                     <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
                 </li>
                 <li class="features__item-small">
                     <h2>Мало туристов</h2>
                     <span>- №5 -</span>
+                    <!--todo:причина 5-->
                     <p>Большинство едет в Гранд Каньон и толпится там</p>
                 </li>
             </ol>
         </section>
         <section class="search">
-            <h2>Заинтересовались?</h2>
-            <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+            <div class="search-header">
+                <h2>Заинтересовались?</h2>
+                <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+            </div>
             <div class="search__map">
-                <img src="#" width="1199" height="479" alt="map">
+                <!--изображение карты-->
             </div>
         </section>
-        <footer>
+        <footer class="footer">
             <section class="footer-contacts">
                 <h2>Контакты</h2>
                 <a href="#">#visitSEDONA</a>
@@ -102,29 +117,35 @@
             </section>
             <section class="footer-social">
                 <h2>Мы в соцсетях</h2>
-                <ul>
+                <ul class="footer-social__items">
                     <li>
-                        <a href="#">Твиттер</a>
+                        <a class="social-button" href="#">
+                            <!--иконка Твиттер--></a>
                     </li>
                     <li>
-                        <a href="#">Фейсбук</a>
+                        <a class="social-button" href="#">
+                            <!--иконка Фейсбук--></a>
                     </li>
                     <li>
-                        <a href="#">Вконтакте</a>
+                        <a class="social-button" href="#">
+                            <!--иконка Вконтакте--></a>
                     </li>
                 </ul>
             </section>
-            <p>Website by
-            <div>
-                <!--для иконки-->
-            </div>
-            <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
-            </p>
+            <section class="footer-copy">
+                <h2> Копирайт</h2>
+                <p>Website by</p>
+                <div>
+                    <!--для иконки-->
+                </div>
+                <a href="https://htmlacademy.ru/intensive/htmlcss"></a>
+            </section>
         </footer>
-        <section class="search__popup">
+        <section class="search__modal">
             <h2>Поиск гостиницы в Седоне</h2>
+            <button class="modal-description" type="button">Поиск гостиницы в Седоне</button>
             <!--Здесь будет форма поиска гостиницы-->
-            <button type="button">Найти</button>
+            <button class="modal-button-search" type="button">Найти</button>
         </section>
     </div>
 </body>

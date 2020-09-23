@@ -4,23 +4,26 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
   <div class="wrapper">
-    <header class="main-header">
-      <nav class="main-header__menu">
-        <ul>
-          <li><a href="info.html">Информация</a></li>
-          <li><a href="photos.html">Фото и видео</a></li>
-          <li><a href="map.html">Карта штата</a></li>
-          <li><a href="hotels.html">Гостиницы</a></li>
-        </ul>
+    <header>
+      <nav class="menu">
+        <div class="menu-item">
+          <a href="info.html">Информация</a>
+          <a href="photos.html">Фото и видео</a>
+        </div>
+        <div class="menu-item">
+          <a href="map.html">Карта штата</a>
+          <a>Гостиницы</a>
+        </div>
       </nav>
-      <div class="main-header__logo">
+      <div class="logo">
         <a href="index.html">
-          <img src="img/logo.svg" width="138" height="70" alt="Логотип сайта городка Седона">
+          <img src="img/logo.png" width="138" height="70" alt="Логотип сайта городка Седона">
         </a>
       </div>
     </header>
@@ -74,9 +77,8 @@
       </form>
     </section>
     <section class="cost-calculator__sorting">
-      <h2>Результат поиска жилья в Седоне</h2>
-      <span>Найдено:</span>
-      <span>3</span>
+      <h2>Сортировка поиска жилья в Седоне</h2>
+      <span>Найдено: 3</span>
       <div class="sorting-items">
         <h3>Сортировка:</h3>
         <input type="text" value="По цене">
@@ -88,12 +90,13 @@
       </div>
     </section>
     <section class="cost-calculator__result">
-      <ul>
+      <h2>Результат поиска жилья в Седоне</h2>
+      <ul class="cost-calculator__result-items">
         <li class="cost-calculator__result-hotel">
           <div class="cost-calculator__img-hotel">
             <img src="img/amara.png" width="135" height="90" alt="Фото отеля Amara Resort & Spa">
           </div>
-          <div class="cost-calculator__result-hotel-detailed">
+          <div class="cost-calculator__result-detailed">
             <a href="#">Amara Resort & Spa
             </a>
             <p>Гостиница</p>
@@ -112,7 +115,7 @@
           <div class="cost-calculator__img-motel">
             <img src="img/desert.png" width="135" height="90" alt="Фото мотеля Desert Quail Inn">
           </div>
-          <div class="cost-calculator__result-motel-detailed">
+          <div class="cost-calculator__result-detailed">
             <a href="#">Desert Quail Inn
             </a>
             <p>Мотель</p>
@@ -131,7 +134,7 @@
           <div class="cost-calculator__img-apartment">
             <img src="img/villas.png" width="135" height="90" alt="Фото апартаментов Villas at Poco Diablo">
           </div>
-          <div class="cost-calculator__result-apartment-detailed">
+          <div class="cost-calculator__result-detailed">
             <a href="#">Villas at Poco Diablo
             </a>
             <p>Апартаменты</p>
@@ -148,7 +151,7 @@
         </li>
       </ul>
     </section>
-    <footer>
+    <footer class="footer">
       <section class="footer-contacts">
         <h2>Контакты</h2>
         <a href="#">#visitSEDONA</a>
@@ -156,7 +159,7 @@
       </section>
       <section class="footer-social">
         <h2>Мы в соцсетях</h2>
-        <ul>
+        <ul class="footer-social-items">
           <li>
             <a href="#">Твиттер</a>
           </li>
@@ -168,11 +171,14 @@
           </li>
         </ul>
       </section>
-      <p>Website by
-      <div>
-        <!--для иконки-->
-      </div>
-      <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
+      <section class="footer-copy">
+        <h2> Копирайт</h2>
+        <p>Website by</p>
+        <div>
+          <!--для иконки-->
+        </div>
+        <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
+      </section>
     </footer>
   </div>
 </body>
