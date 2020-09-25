@@ -1,294 +1,320 @@
 /* Fonts */
 @font-face {
-    font-family: "PT Sans";
-    font-style: normal;
-    font-weight: 400;
-    src: local("PT Sans"), local("PTSans-Regular"), url("../fonts/ptsans.woff2") format("woff2"),
-        url("../fonts/ptsans.woff") format("woff");
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: local("PT Sans"), local("PTSans-Regular"), url("../fonts/ptsans.woff2") format("woff2"),
+    url("../fonts/ptsans.woff") format("woff");
 }
 
 @font-face {
-    font-family: "PT Sans";
-    font-style: normal;
-    font-weight: 700;
-    src: local("PT Sans Bold"), local("PTSans-Bold"), url("../fonts/ptsansbold.woff2") format("woff2"),
-        url("../fonts/ptsansbold.woff") format("woff");
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: local("PT Sans Bold"), local("PTSans-Bold"), url("../fonts/ptsansbold.woff2") format("woff2"),
+    url("../fonts/ptsansbold.woff") format("woff");
 }
 
 /* custom*/
 :root {
-    --basic-black: #000000;
-    --basic-white: #ffffff;    
-    --basic-blue: #81b3d2;
-    --sorting-grey: #666666;
-    --shadow-grey: #f2f2f2;
-    --feature-grey: #eeeeee;
-    --footer-grey: 255, 255, 255, 0.9;
-    --active-grey: A9A9A9;
-
-    --special: #766357;
+  --main-black: #000000;
+  --main-black-3: rgba(0, 0, 0, 0.3); /* hover nav*/
+  --main-white: #ffffff;
+  --main-blue: #81b3d2; /*bg 1-2 feature*/
+  --light-grey: #f2f2f2; /* body*/
+  --secondary-grey: #eeeeee; /*bg 3-5 feature*/
+  --dark-grey: #333333; /*color p text*/
+  --transparent-grey-9: rgba(255, 255, 255, 0.9);
 }
 
 /*style*/
 .page {
-    height: 100%;
+  height: 100%;
 }
 
 .page-body {
-    max-width: 1280px; /*todo: https://up.htmlacademy.ru/htmlcss/29/demos/4271#7 min-width: ;*/
-    font-family: "PT Sans", "Arial", sans-serif;
-    font-size: 14px;
-    line-height: 21px;
-    color: var(--basic-black);
-    text-transform: uppercase;
-    background-color: var(--shadow-grey); /*todo: как узнать цвет?*/
-    background-repeat: no-repeat;
-    font-weight: 400;
-}
-
-a {    
-    text-decoration: none;/*todo: дать class="link"? */
-    color: var(--basic-black);
+  min-width: 800px;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  color: var(--main-black);
+  text-transform: uppercase;
+  background-color: var(--light-grey);
+  background-repeat: no-repeat;
+  font-weight: 400;
 }
 
 img {
-    max-width: 100%;
-    height: auto;
-    background-repeat: no-repeat;
-}
-
-li {
-    list-style: none; 
+  max-width: 100%;
+  height: auto;
+  background-repeat: no-repeat;
 }
 
 .wrapper {
-    background-color: var(--basic-white);
-    max-width: 1200px; /*todo: https://up.htmlacademy.ru/htmlcss/29/demos/4271#7 min-width: ;*/
-    margin: 0 auto;
+  position: relative;
+  background-color: var(--main-white);
+  margin: 0 auto;
 }
 
 /* header menu*/
+.main-header {
+  position: relative;
+}
+
 .main-navigation {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    height: 56px;
-    margin: 0;
+  display: flex;
+  height: 56px;
+  align-items: center;
 }
 
-.main-navigation-item {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 35%;
+.main-navigation__item {
+  width: 25%;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 700;
+  color: var(--main-black);
+  text-decoration: none;
 }
 
-.main-navigation-item a {
-    font-size: 14px;
-    line-height: 26px;
-    font-weight: 700;
-    color: var(--basic-black);
+/* hover*/
+.main-navigation__item:hover {
+  color: var(--main-blue);
+}
+
+/* active*/
+.main-navigation__item:active {
+  color: var(--main-black-3);
+}
+
+.link-info,
+.link-hotels {
+  text-align: center; /*todo: подогнать позже, меняются цифры*/
+}
+
+.link-map {
+  text-align: right; /*todo: подогнать позже, меняются цифры*/
 }
 
 /* logo */
-.main-header-logo {    
-    position: relative;
-    width: 30%; 
-}
-
 .main-header-logo img {
-    position: absolute;  /*todo: при сжатии лого не остается на месте */
-    top: 0;
-    left: 78px;
+  position: absolute;
+  top: 0;
+  left: 541px;
 }
 
-/* features__img-main *//*todo: глюк в гугле при открытой консоли - полоса */
+/* features__img-main */
 .features__main-img {
-    margin: 0 auto;
-    height: 509px;
-    background-color: var(--basic-white); /*это не точно*/
-    background-repeat: no-repeat;
-    background-image: url("../img/Shape.png"), url("../img/welcome.png"), url("../img/bg_photo.png");
-    background-position: bottom, center, center;
+  margin: 0 auto;
+  height: 509px;
+  background-color: var(--main-blue);
+  background-repeat: no-repeat;
+  background-image: url("../img/Shape.png"), url("../img/welcome.png"), url("../img/bg-photo.jpg");
+  background-position: bottom, center, center;
+  background-size: 1200px 57px, 457px 351px, 1198px 508px;
 }
 
 /* features__header */
 .features__title {
-    width: 100%;
-    height: 216px;
-    margin: 0 auto;
-    text-align: center;
+  width: 100%;
+  height: 216px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .features__title h1 {
-    display: block;
-    max-width: 470px;
-    font-size: 21px;
-    line-height: 26px;
-    font-weight: 700;
-    margin: 43px auto 16px; /*todo: дроби в отсупах? */
+  display: block;
+  max-width: 470px;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  margin: 43px auto 16px;
 }
 
 .features__title p {
-    font-size: 14px;
-    line-height: 26px;
-    color: var(--feature-black);
-    margin: 0 auto 51px; /*todo: подогнать позже, меняются цифры*/
+  font-size: 14px;
+  line-height: 26px;
+  color: var(--dark-grey);
+  margin: 0 auto 51px; /*todo: подогнать позже, меняются цифры*/
 }
 
 /* features__list */
 .features__list {
-    display: flex;
-    flex-wrap: wrap;    
-    text-align: center;
-    margin: 0;
-    padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  margin: 0;
+  padding: 0;
 }
 
 .features__item-big,
 .features__recommendation {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    width: 100%;
-    padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0;
 }
 
 .feature-item-middle {
-    width: 33.33%;  /*todo: можно так? */
-    height: 256px;
-    background-color: var(--basic-blue);
+  width: 33.33%;
+  height: 256px;
+  background-color: var(--main-blue);
+  list-style: none;
 }
 
 .features__item-big:first-child .features__middle-img {
-    background-image: url("../img/house.png"); /*todo: сжать картинку  */
-    width: 66.66%;
-    height: 256px;
+  width: 66.66%;
+  height: 256px;
+  background-image: url("../img/house.jpg");
+  background-color: var(--main-blue);
+  background-repeat: no-repeat;
 }
 
 .features__item-big:nth-child(2) .features__middle-img {
-    background-image: url("../img/bridge.png"); /*todo: сжать картинку  */
-    width: 66.66%;
-    height: 256px; /*todo: flex-direction включить и в разметке второй по счету  картинку поставить? */
-    width: 66.66%;
+  width: 66.66%;
+  height: 256px;
+  background-image: url("../img/bridge.jpg");
+  background-color: var(--main-blue);
+  background-repeat: no-repeat;
 }
 
 .features__recommendation-item {
-    width: 33.33%;
-    height: 256px;
-    margin-bottom: 74px;
+  width: 33.33%;
+  height: 256px;
+  list-style: none;
+  margin-bottom: 74px;
 }
 
 .features__list h2 {
-    display: block;
-    max-width: 150px;
-    font-size: 21px;
-    line-height: 21px;
-    text-align: center;
-    margin: 43px auto 25px; /*todo: подогнать позже, меняются цифры*/
+  display: block;
+  max-width: 150px;
+  font-size: 21px;
+  line-height: 21px;
+  text-align: center;
+  margin: 43px auto 25px; /*todo: подогнать позже, меняются цифры*/
 }
 
 .features__list p,
 .features__list span {
-    display: block;
-    max-width: 301px;
-    font-size: 14px;
-    line-height: 21px;
-    color: var(--feature-black);
-    margin: 15px auto 50px; /*todo: подогнать позже, меняются цифры*/
+  display: block;
+  max-width: 301px;
+  font-size: 14px;
+  line-height: 21px;
+  color: var(--dark-grey);
+  margin: 15px auto 50px; /*todo: подогнать позже, меняются цифры*/
 }
 
 .feature-item-middle h2,
 .feature-item-middle p,
 .feature-item-middle span {
-    /* todo: можно сократить запись?*/
-    color: var(--basic-white);
+  color: var(--main-white);
 }
 
 .features__item-small {
-    width: 33.33%;
-    height: 256px;
-    background-color: var(--feature-grey);
+  width: 33.33%;
+  height: 256px;
+  background-color: var(--secondary-grey);
+  list-style: none;
 }
 
 .features__item-small p {
-   max-width: 258px;
-   
+  max-width: 258px;
 }
+
 .features__icon {
-    max-width: 75px;
-    height: 72px;
+  max-width: 75px;
+  height: 72px;
 }
 
 /* search */
- .search {
-    width: 100%;
-    text-align: center;   
+.search {
+  width: 100%;
+  height: 883px;
+  text-align: center;
 }
 
 .search-header {
-    width: 100%;
-    height: 290px;
+  width: 100%;
+  height: 290px;
 }
 
 .search h2 {
-    display: block;    
-    font-size: 30px;
-    line-height: 24px;
-    margin: 58px auto 40px;
+  display: block;
+  font-size: 30px;
+  line-height: 24px;
+  margin: 58px auto 40px;
 }
 
 .search p {
-    display: block;    
-    width: 435px ;
-    height: 40px;
-    font-size: 14px;
-    line-height: 24px;
-    margin: 0 auto;
+  display: block;
+  width: 435px;
+  height: 40px;
+  font-size: 14px;
+  line-height: 24px;
+  margin: 0 auto;
 }
 
-.search__map {  /*todo: видео: интерактивная карта, которая лежит под прозрачным подвалом и формой поиска */
-    display: block;
-    background-image: url(../img/map.png);  /* todo: разобраться с форматом и сжатием*/
-    width: 100%;
-    height: 474px;
-} 
-
-.footer {
-    display: flex;   
-    height: 120px;
-    background-color: var(--footer-grey);
-}
-.footer section {
-    width: 33.33%;    
-    text-align: center;
-    margin: 15px auto;
+/* map */
+.search__map {
+  width: 100%;
+  height: 593px;
+  background-image: url("../img/map.jpg");
+  background-repeat: no-repeat;
 }
 
-.footer h2,
+/* modal */
+.search__modal {
+  display: none;
+  width: 568px;
+  height: 481px;
+  color: var(--main-black);
+  background-color: var(--main-white);
+}
+
+/* footer */
+.page-footer {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  display: flex;
+  height: 120px;
+  background-color: var(--transparent-grey-9);
+}
+
+.page-footer__contacts a {
+  align-items: center;
+  text-decoration: none;
+  color: var(--main-black);
+}
+
+.page-footer__contacts,
+.page-footer__social,
+.page-footer__copy {
+  width: 33.33%;
+  text-align: center;
+}
+
+.page-footer h2,
 .search__modal h2 {
-    display: none;
+  display: none;
 }
 
-.footer-contacts {
-    font-size: 21px;
-    line-height: 26px;
-    font-weight: 700;
+.page-footer__contacts {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  align-items: start;
 }
 
-.footer-copy {
-    font-size: 14px;
-    line-height: 26px;
+.page-footer__social-items {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
 }
 
-.main-navigation-item a:focus { /*todo: как узнать цвет голубого при наведении? */
-    color: var(--basic-blue);
-}
-
-.main-navigation-item a:hover { 
-        color: var(--active-grey);
-
-}
-.main-navigation-item a:active { 
-    color: var(--active-grey);
+.page-footer__copy {
+  font-size: 14px;
+  line-height: 26px;
 }
