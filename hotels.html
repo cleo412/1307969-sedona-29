@@ -8,24 +8,20 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body class="page-body">
   <div class="wrapper">
-    <header>
-      <nav class="menu">
-        <div class="menu-item">
-          <a href="info.html">Информация</a>
-          <a href="photos.html">Фото и видео</a>
-        </div>
-        <div class="menu-item">
-          <a href="map.html">Карта штата</a>
-          <a>Гостиницы</a>
-        </div>
-      </nav>
-      <div class="logo">
+    <header class="main-header">
+      <div class="main-header-logo">
         <a href="index.html">
-          <img src="img/logo.png" width="138" height="70" alt="Логотип сайта городка Седона">
+          <img src="img/logo.svg" width="138" height="70" alt="Логотип города Седона">
         </a>
       </div>
+      <nav class="main-navigation">
+        <a class="main-navigation__item link-info" href="#">Информация</a>
+        <a class="main-navigation__item link-photos" href="#">Фото и видео</a>
+        <a class="main-navigation__item link-map" href="#">Карта штата</a>
+        <a class="main-navigation__item link-hotels">Гостиницы</a> <!-- todo:так можно? -->
+      </nav>
     </header>
     <section class="cost-calculator__img-muddy">
       <!--Фоновое изображение-->
