@@ -27,9 +27,10 @@
       </nav>
     </header>
     <main class="page-main">
+      <h1 hidden>Форма поиска и результат поиска жилья в Седоне</h1>
       <section class="filter">
         <!-- bg-->
-        <h2 hidden>Калькулятор стоимости проживания</h2>
+        <h2 hidden>Фильтры стоимости и инфраструктуры жилья в Седоне</h2>
         <div class="filter__img-muddy">
           <!-- bg-img -->
           <!-- form -->
@@ -69,17 +70,23 @@
                 <span class="filter__rublecount-separation"></span>
                 <div class="filter__rublescount-item rublescount-max">до 3000</div>
               </div>
-              <div class="filter__options">
-                <input class="typography-subtitle" type="range" name="rublescount" min="50" max="3000" step="50">
+              <div class="filter__range">
+                <div class="filter__controls">
+                  <div class="filter__price-scale"><!--полоска-->
+                    <div class="filter__price-bar"><!--активная полоска-->
+                      <div class="toggle toggle-min"></div><!--кружки-->
+                      <div class="toggle toggle-max"></div><!--кружки-->
+                    </div>
+                  </div>
+                </div>
+                <input class="typography-subtitle" type="submit" value="Показать">
               </div>
-              <input class="typography-subtitle" type="submit" value="Показать">
-            </div>
           </form>
         </div>
       </section>
       <section class="sort">
         <!-- sort -->
-        <h2 hidden>Поиск жилья в Седоне</h2>
+        <h2 hidden>Сортировка результата жилья в Седоне</h2>
         <ol class="sort__items">
           <li class="sort__item sort__item-result typography-main">Найдено: 3</li>
           <li class="sort__item sort__item-title">Сортировка:</li>
@@ -96,15 +103,16 @@
       </section>
       <section class="hotellist">
         <!-- hotellist  -->
-        <h1 hidden>Результат поиска жилья в Седоне</h1>
+        <h2 hidden>Результат поиска жилья в Седоне</h2>
         <ul class="hotellist__items">
-          <li class="hotellist__item hotellist__item-hotel">
-            <div class="hotellist__img img-hotel">
+          <li class="hotellist__item hotel-item">
+            <h3 hidden>отель Amara Resort & Spa</h3>
+            <div class="hotel-item__img">
               <img src="img/amara-1.jpg" width="135" height="90" alt="Фото отеля Amara Resort & Spa">
             </div>
             <div class="hotellist__naming">
               <!-- hotel -->
-              <a class="hotellist__naming-title typography-main" href="#">Amara Resort & Spa
+              <a class="hotellist__naming-title typography-main" href="#">Amara Resort & Spa 
               </a>
               <span class="hotellist__naming-type typography-subtitle">Гостиница</span>
               <span class="hotellist__naming-price typography-subtitle">от 4000 р.</span>
@@ -137,9 +145,10 @@
               <span class="hotellist__rating-sum">Рейтинг:8,5</span>
             </div>
           </li>
-          <li class="hotellist__item hotellist__item-motel">
+          <li class="hotellist__item motel-item">
             <!-- motel -->
-            <div class="hotellist__img img-motel">
+            <h3 hidden>мотель Desert Quail Inn</h3>
+            <div class="motel-item__img">
               <img src="img/desert-2.jpg" width="135" height="90" alt="Фото мотеля Desert Quail Inn">
             </div>
             <div class="hotellist__naming">
@@ -176,9 +185,10 @@
               <span class="hotellist__rating-sum">Рейтинг:8,9</span>
             </div>
           </li>
-          <li class="hotellist__item hotellist__item-apartment">
+          <li class="hotellist__item apartment-item">
             <!-- apartment -->
-            <div class="hotellist__img img-apartment">
+            <h3 hidden>апартаменты Villas at Poco Diablo</h3>
+            <div class="apartment-item__img">
               <img src="img/villas-3.jpg" width="135" height="90" alt="Фото апартаментов Villas at Poco Diablo">
             </div>
             <div class="hotellist__naming">
