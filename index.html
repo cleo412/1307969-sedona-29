@@ -113,52 +113,11 @@
             гостиниц в Седоне</p>
         </div>
         <div class="search__map">
-          <!-- map -->
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52385.135657587736!2d-111.83015800329127!3d34.854443815526054!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1602685070087!5m2!1sru!2sru"
+            width="1200" height="593" frameborder="0" style="border:0;" allowfullscreen="Седона, Аризона, США"
+            aria-hidden="false" tabindex="0"></iframe>
         </div>
-        <form class="search__modal" action="https://echo.htmlacademy.ru" method="get">
-          <button class="modal__button-description button-modal" type="button">Поиск гостиницы в Седоне</button>
-          <table class="search__table">
-            <tr>
-              <td>
-                <label for="arrival-field" class="search__item ">Дата заезда </label>
-              </td>
-              <td>
-                <input class="date-field" type="date" id="arrival-field" name="arrival" required>
-                <input type="image" src="img/icon_calendar_grey.svg" alt="">
-              </td>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>
-                <label for="departure-field" class="search__item">Дата выезда</label>
-              </td>
-              <td>
-                <input class="date-field" type="date" id="departure-field" name="departure" required>
-                <input type="image" src="img/icon_calendar_grey.svg" alt="">
-              </td>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>
-                <label for="adults-field" class="search__item">Взрослые</label>
-              </td>
-              <td>
-                <input class="" type="number" min="1" max="100" step="1" id="adults-field" name="total-adults"
-                  placeholder="2" required>
-              </td>
-              <td>
-                <label for="children-field" class="search__item">Дети </label>
-              </td>
-              <td>
-                <input type="number" min="1" max="100" step="1" id="children-field" name="total-children"
-                  placeholder="0">
-              </td>
-            </tr>
-          </table>
-          <input class="modal__button-search button-modal" type="submit" name="find" value="Найти">
-        </form>
       </section>
     </main>
     <footer class="page-footer-index">
@@ -210,7 +169,42 @@
         </a>
       </section>
     </footer>
+    <form class="search__modal" action="https://echo.htmlacademy.ru" method="get">
+      <button class="modal__button-description" type="button">Поиск гостиницы в Седоне</button>
+      <div class="search__wrapper modal-open modal-close">
+        <label class="search__item" for="arrival-field">Дата заезда </label>
+        <input class="search-big" type="date" id="arrival-field" name="arrival" required>
+        <svg width="21" height="23" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M16.406 3.025h2.845c.966 0 1.749.822 1.749 1.837v16.302C21 22.179 20.217 23 19.251 23H1.75C.784 23 0 22.179 0 21.164V4.862c0-1.015.784-1.837 1.75-1.837h2.843V1.648c0-.381.294-.689.657-.689.362 0 .656.308.656.689v1.377h3.938V1.648c0-.381.294-.689.657-.689.361 0 .655.308.655.689v1.377h3.938V1.648c0-.381.293-.689.656-.689.362 0 .656.308.656.689v1.377zm3.159 18.459a.448.448 0 00.123-.32h.001V4.862a.449.449 0 00-.437-.459h-2.845v1.378c0 .381-.294.689-.656.689-.363 0-.656-.308-.656-.689V4.403h-3.938v1.378c0 .381-.294.689-.655.689-.363 0-.657-.308-.657-.689V4.403H5.907v1.378c0 .381-.294.689-.656.689-.363 0-.657-.308-.657-.689V4.403H1.75a.45.45 0 00-.438.459v16.302a.45.45 0 00.438.459h17.501a.448.448 0 00.314-.139z"
+            fill="#A9A9A9" />
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M4.594 9.225h2.625v2.066H4.594V9.225zm0 3.443h2.625v2.067H4.594v-2.067zm2.625 3.444H4.594v2.066h2.625v-2.066zm1.969 0h2.625v2.066H9.188v-2.066zm2.625-3.444H9.188v2.067h2.625v-2.067zM9.188 9.225h2.625v2.066H9.188V9.225zm7.218 6.887h-2.625v2.066h2.625v-2.066zm-2.625-3.444h2.625v2.067h-2.625v-2.067zm2.625-3.443h-2.625v2.066h2.625V9.225z"
+            fill="#A9A9A9" /></svg>
+        <label class="search__item" for="departure-field">Дата выезда</label>
+        <input class="search-big" type="date" id="departure-field" name="departure" required>
+        <svg width="21" height="23" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M16.406 3.025h2.845c.966 0 1.749.822 1.749 1.837v16.302C21 22.179 20.217 23 19.251 23H1.75C.784 23 0 22.179 0 21.164V4.862c0-1.015.784-1.837 1.75-1.837h2.843V1.648c0-.381.294-.689.657-.689.362 0 .656.308.656.689v1.377h3.938V1.648c0-.381.294-.689.657-.689.361 0 .655.308.655.689v1.377h3.938V1.648c0-.381.293-.689.656-.689.362 0 .656.308.656.689v1.377zm3.159 18.459a.448.448 0 00.123-.32h.001V4.862a.449.449 0 00-.437-.459h-2.845v1.378c0 .381-.294.689-.656.689-.363 0-.656-.308-.656-.689V4.403h-3.938v1.378c0 .381-.294.689-.655.689-.363 0-.657-.308-.657-.689V4.403H5.907v1.378c0 .381-.294.689-.656.689-.363 0-.657-.308-.657-.689V4.403H1.75a.45.45 0 00-.438.459v16.302a.45.45 0 00.438.459h17.501a.448.448 0 00.314-.139z"
+            fill="#A9A9A9" />
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M4.594 9.225h2.625v2.066H4.594V9.225zm0 3.443h2.625v2.067H4.594v-2.067zm2.625 3.444H4.594v2.066h2.625v-2.066zm1.969 0h2.625v2.066H9.188v-2.066zm2.625-3.444H9.188v2.067h2.625v-2.067zM9.188 9.225h2.625v2.066H9.188V9.225zm7.218 6.887h-2.625v2.066h2.625v-2.066zm-2.625-3.444h2.625v2.067h-2.625v-2.067zm2.625-3.443h-2.625v2.066h2.625V9.225z"
+            fill="#A9A9A9" /></svg>
+        <label class="search__item" for="adults-field">Взрослые</label>
+        <input class="search-small" type="number" min="1" max="100" step="1" id="adults-field" name="total-adults"
+          placeholder="2" required>
+        <label class="search__item" for="children-field">Дети </label>
+        <input class="search-small" type="number" min="1" max="100" step="1" id="children-field" name="total-children"
+          placeholder="0">
+      </div>
+      <input class="modal__button-search" type="submit" name="find" value="Найти">
+
+
+
+    </form>
+
   </div>
+
 </body>
 
 </html>
