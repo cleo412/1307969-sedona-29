@@ -12,18 +12,22 @@
   <div class="main-wrapper">
     <header class="main-header">
       <div class="main-header__logo">
-        <img src="img/logo_main.svg" width="138" height="70" alt="Логотип города Седона">
+        <a tabindex="1" href="index.html">
+          <img src="img/logo_main.png" width="138" height="70" alt="Логотип города Седона">
+          <svg width="138" height="70" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M138 0H0l59.51 65.68c5.22 5.761 13.76 5.761 18.98 0L138 0z" fill="#81B3D3" /></svg>
+        </a>
       </div>
       <nav class="main-header__nav">
         <ul class="main-header__nav-items">
-          <li class="main-header__nav-item nav__item-info"><a href="#">Информация</a>
+          <li class="main-header__nav-item nav__item-info"><a tabindex="1" href="#">Информация</a>
           </li>
-          <li class="main-header__nav-item nav__item-photos"><a href="#">Фото и
+          <li class="main-header__nav-item nav__item-photos"><a tabindex="2" href="#">Фото и
               видео</a>
           </li>
-          <li class="main-header__nav-item nav__item-map"><a href="#">Карта штата</a>
+          <li class="main-header__nav-item nav__item-map"><a tabindex="3" href="#">Карта штата</a>
           </li>
-          <li class="main-header__nav-item nav__item-hotels"><a href="hotels.html">Гостиницы</a></li>
+          <li class="main-header__nav-item nav__item-hotels"><a tabindex="4" href="hotels.html">Гостиницы</a></li>
         </ul>
       </nav>
     </header>
@@ -90,19 +94,19 @@
             <h2 class="features__title">Небольшая<br>площадь</h2>
             <span class="features__number">&#8212; №3 &#8212;</span>
             <!-- 3 -->
-            <p class="features__subtitle">Все достопримечательности находятся очень близко</p>
+            <p class="features__subtitle">Все достопримечательности<br>находятся очень близко</p>
           </li>
           <li class="features__item features__item-small">
             <h2 class="features__title">Красивая<br>дорога</h2>
             <span class="features__number">&#8212; №4 &#8212;</span>
             <!-- 4 -->
-            <p class="features__subtitle">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+            <p class="features__subtitle">Ехать в Седону из Лас-Вегаса совсем<br>не скучно!</p>
           </li>
           <li class="features__item features__item-small">
             <h2 class="features__title">Мало<br>туристов</h2>
             <span class="features__number">&#8212; №5 &#8212;</span>
             <!-- 5 -->
-            <p class="features__subtitle">Большинство едет в Гранд Каньон и толпится там</p>
+            <p class="features__subtitle">Большинство едет в Гранд Каньон<br> и толпится там </p>
           </li>
         </ol>
       </section>
@@ -114,26 +118,26 @@
         </div>
         <div class="search__map">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52385.135657587736!2d-111.83015800329127!3d34.854443815526054!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1602685070087!5m2!1sru!2sru"
-            width="1200" height="593" frameborder="0" style="border:0;" allowfullscreen="Седона, Аризона, США"
-            aria-hidden="false" tabindex="0"></iframe>
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52385.135657587736!2d-111.83015800329127!3d34.85444381552606!2m3!1f0!2f0!3f0!3m2!11024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1602782430492!5m2!1sru!2sru"
+            width="1200" height="593" style="border:0;" aria-hidden="false" tabindex="-1"
+            title="карта города Седона, штат Аризона, США "></iframe>
         </div>
       </section>
     </main>
     <footer class="page-footer-index">
       <!-- footer-->
       <section class="page-footer__item page-footer__contacts">
-        <h2 hidden>Контакты</h2>
-        <p class="page-footer__contacts-link"><a href="#">#visitSEDONA</a></p>
-        <p class="page-footer__contacts-tel">Тел: <a href="tel:+74956660166">+7(495)
-            666-01-66</a></p>
+        <h2 class="visually-hidden">Контакты</h2>
+        <div class="page-footer__contacts-link"><a tabindex="5" href="#">#visitSEDONA</a></div>
+        <div class="page-footer__contacts-tel"><a tabindex="6" href="tel:+74956660166">Тел: +7(495)
+            666-01-66</a></div>
       </section>
-      <section class="page-footer__item page-footer__social">
-        <h2 hidden>Мы в соцсетях</h2>
+      <section class="page-footer__item">
+        <h2 class="visually-hidden">Мы в соцсетях</h2>
         <ul class="page-footer__social-items">
           <li class="page-footer__social-item">
-            <a class="page-footer__button" href="#">
-              <span hidden>Твитер</span>
+            <a tabindex="7" class="page-footer__button" href="#">
+              <span class="visually-hidden">Твитер</span>
               <svg class="button-social" width="17" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M10.95 1.14a3.1 3.1 0 013.58 1.18c.67-.23 1.33-.48 2-.7a2.34 2.34 0 01-.85 1.76c.69.17 1.3-.49 1.3-.49-.16 1-1 1.79-1.56 2.03C15.2 11.67 12.25 16.13 5.34 16H4.9c-.41 0-4.17-.46-4.9-1.89 2.27.2 3.9-.42 4.7-1.18-.97-.3-2.69-.47-2.99-2.95.35.11.57.23 1.2.12C1.7 9.25.36 8.53.44 6.33a1.9 1.9 0 001.34.47c-.7-.24-1.97-3.36-.9-4.95 1.82 1.85 3.74 3.6 7.16 3.77.2-2.29 1.13-3.83 2.9-4.48z"
@@ -141,15 +145,15 @@
             </a>
           </li>
           <li class="page-footer__social-item">
-            <a class="page-footer__button" href="#">
-              <span hidden>Фейсбук</span>
+            <a tabindex="8" class="page-footer__button" href="#">
+              <span class="visually-hidden">Фейсбук</span>
               <svg class="button-social" width="12" height="22" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M12 4V0H8a4 4 0 00-4 4v4H0v4h4v10h4V12h4V8H8V4h4z" fill="#fff" /></svg>
             </a>
           </li>
           <li class="page-footer__social-item">
-            <a class="page-footer__button" href="#">
-              <span hidden>Ютуб</span>
+            <a tabindex="9" class="page-footer__button" href="#">
+              <span class="visually-hidden">Ютуб</span>
               <svg class="button-social" width="20" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd"
                   d="M3 0h14a3 3 0 013 3v10a3 3 0 01-3 3H3a3 3 0 01-3-3V3a3 3 0 013-3zm3.03 4v8L15 8 6.03 4z"
@@ -158,9 +162,9 @@
           </li>
         </ul>
       </section>
-      <section class="page-footer__item page-footer__copy">
-        <h2 hidden> Копирайт</h2>
-        <a class="page-footer__copy-text" href="https://htmlacademy.ru/intensive/htmlcss">
+      <section class="page-footer__item">
+        <h2 class="visually-hidden"> Копирайт</h2>
+        <a tabindex="10" class="page-footer__copy-text" href="https://htmlacademy.ru/intensive/htmlcss">
           <p>Website by</p>
           <svg width="115" height="41" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" clip-rule="evenodd"
@@ -170,41 +174,60 @@
       </section>
     </footer>
     <form class="search__modal" action="https://echo.htmlacademy.ru" method="get">
-      <button class="modal__button-description" type="button">Поиск гостиницы в Седоне</button>
-      <div class="search__wrapper modal-open modal-close">
+      <button tabindex="11" class="modal__button-description  modal-open modal-close" type="button">Поиск гостиницы в
+        Седоне</button>
+      <div class="search__wrapper">
         <label class="search__item" for="arrival-field">Дата заезда </label>
-        <input class="search-big" type="date" id="arrival-field" name="arrival" required>
-        <svg width="21" height="23" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path fill-rule="evenodd" clip-rule="evenodd"
-            d="M16.406 3.025h2.845c.966 0 1.749.822 1.749 1.837v16.302C21 22.179 20.217 23 19.251 23H1.75C.784 23 0 22.179 0 21.164V4.862c0-1.015.784-1.837 1.75-1.837h2.843V1.648c0-.381.294-.689.657-.689.362 0 .656.308.656.689v1.377h3.938V1.648c0-.381.294-.689.657-.689.361 0 .655.308.655.689v1.377h3.938V1.648c0-.381.293-.689.656-.689.362 0 .656.308.656.689v1.377zm3.159 18.459a.448.448 0 00.123-.32h.001V4.862a.449.449 0 00-.437-.459h-2.845v1.378c0 .381-.294.689-.656.689-.363 0-.656-.308-.656-.689V4.403h-3.938v1.378c0 .381-.294.689-.655.689-.363 0-.657-.308-.657-.689V4.403H5.907v1.378c0 .381-.294.689-.656.689-.363 0-.657-.308-.657-.689V4.403H1.75a.45.45 0 00-.438.459v16.302a.45.45 0 00.438.459h17.501a.448.448 0 00.314-.139z"
-            fill="#A9A9A9" />
-          <path fill-rule="evenodd" clip-rule="evenodd"
-            d="M4.594 9.225h2.625v2.066H4.594V9.225zm0 3.443h2.625v2.067H4.594v-2.067zm2.625 3.444H4.594v2.066h2.625v-2.066zm1.969 0h2.625v2.066H9.188v-2.066zm2.625-3.444H9.188v2.067h2.625v-2.067zM9.188 9.225h2.625v2.066H9.188V9.225zm7.218 6.887h-2.625v2.066h2.625v-2.066zm-2.625-3.444h2.625v2.067h-2.625v-2.067zm2.625-3.443h-2.625v2.066h2.625V9.225z"
-            fill="#A9A9A9" /></svg>
+        <input tabindex="12" class="search-big" type="text" id="arrival-field" name="arrival"
+          placeholder="24 апреля 2017" required>
+        <div class="search__calendar">
+          <svg width="21" height="23" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M16.406 3.025h2.845c.966 0 1.749.822 1.749 1.837v16.302C21 22.179 20.217 23 19.251 23H1.75C.784 23 0 22.179 0 21.164V4.862c0-1.015.784-1.837 1.75-1.837h2.843V1.648c0-.381.294-.689.657-.689.362 0 .656.308.656.689v1.377h3.938V1.648c0-.381.294-.689.657-.689.361 0 .655.308.655.689v1.377h3.938V1.648c0-.381.293-.689.656-.689.362 0 .656.308.656.689v1.377zm3.159 18.459a.448.448 0 00.123-.32h.001V4.862a.449.449 0 00-.437-.459h-2.845v1.378c0 .381-.294.689-.656.689-.363 0-.656-.308-.656-.689V4.403h-3.938v1.378c0 .381-.294.689-.655.689-.363 0-.657-.308-.657-.689V4.403H5.907v1.378c0 .381-.294.689-.656.689-.363 0-.657-.308-.657-.689V4.403H1.75a.45.45 0 00-.438.459v16.302a.45.45 0 00.438.459h17.501a.448.448 0 00.314-.139z"
+              fill="#A9A9A9" />
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M4.594 9.225h2.625v2.066H4.594V9.225zm0 3.443h2.625v2.067H4.594v-2.067zm2.625 3.444H4.594v2.066h2.625v-2.066zm1.969 0h2.625v2.066H9.188v-2.066zm2.625-3.444H9.188v2.067h2.625v-2.067zM9.188 9.225h2.625v2.066H9.188V9.225zm7.218 6.887h-2.625v2.066h2.625v-2.066zm-2.625-3.444h2.625v2.067h-2.625v-2.067zm2.625-3.443h-2.625v2.066h2.625V9.225z"
+              fill="#A9A9A9" /></svg>
+        </div>
         <label class="search__item" for="departure-field">Дата выезда</label>
-        <input class="search-big" type="date" id="departure-field" name="departure" required>
-        <svg width="21" height="23" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path fill-rule="evenodd" clip-rule="evenodd"
-            d="M16.406 3.025h2.845c.966 0 1.749.822 1.749 1.837v16.302C21 22.179 20.217 23 19.251 23H1.75C.784 23 0 22.179 0 21.164V4.862c0-1.015.784-1.837 1.75-1.837h2.843V1.648c0-.381.294-.689.657-.689.362 0 .656.308.656.689v1.377h3.938V1.648c0-.381.294-.689.657-.689.361 0 .655.308.655.689v1.377h3.938V1.648c0-.381.293-.689.656-.689.362 0 .656.308.656.689v1.377zm3.159 18.459a.448.448 0 00.123-.32h.001V4.862a.449.449 0 00-.437-.459h-2.845v1.378c0 .381-.294.689-.656.689-.363 0-.656-.308-.656-.689V4.403h-3.938v1.378c0 .381-.294.689-.655.689-.363 0-.657-.308-.657-.689V4.403H5.907v1.378c0 .381-.294.689-.656.689-.363 0-.657-.308-.657-.689V4.403H1.75a.45.45 0 00-.438.459v16.302a.45.45 0 00.438.459h17.501a.448.448 0 00.314-.139z"
-            fill="#A9A9A9" />
-          <path fill-rule="evenodd" clip-rule="evenodd"
-            d="M4.594 9.225h2.625v2.066H4.594V9.225zm0 3.443h2.625v2.067H4.594v-2.067zm2.625 3.444H4.594v2.066h2.625v-2.066zm1.969 0h2.625v2.066H9.188v-2.066zm2.625-3.444H9.188v2.067h2.625v-2.067zM9.188 9.225h2.625v2.066H9.188V9.225zm7.218 6.887h-2.625v2.066h2.625v-2.066zm-2.625-3.444h2.625v2.067h-2.625v-2.067zm2.625-3.443h-2.625v2.066h2.625V9.225z"
-            fill="#A9A9A9" /></svg>
+        <input tabindex="13" class="search-big" type="text" id="departure-field" name="departure"
+          placeholder="4 июля 2017" required>
+        <div class="search__calendar">
+          <svg width="21" height="23" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M16.406 3.025h2.845c.966 0 1.749.822 1.749 1.837v16.302C21 22.179 20.217 23 19.251 23H1.75C.784 23 0 22.179 0 21.164V4.862c0-1.015.784-1.837 1.75-1.837h2.843V1.648c0-.381.294-.689.657-.689.362 0 .656.308.656.689v1.377h3.938V1.648c0-.381.294-.689.657-.689.361 0 .655.308.655.689v1.377h3.938V1.648c0-.381.293-.689.656-.689.362 0 .656.308.656.689v1.377zm3.159 18.459a.448.448 0 00.123-.32h.001V4.862a.449.449 0 00-.437-.459h-2.845v1.378c0 .381-.294.689-.656.689-.363 0-.656-.308-.656-.689V4.403h-3.938v1.378c0 .381-.294.689-.655.689-.363 0-.657-.308-.657-.689V4.403H5.907v1.378c0 .381-.294.689-.656.689-.363 0-.657-.308-.657-.689V4.403H1.75a.45.45 0 00-.438.459v16.302a.45.45 0 00.438.459h17.501a.448.448 0 00.314-.139z"
+              fill="#A9A9A9" />
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M4.594 9.225h2.625v2.066H4.594V9.225zm0 3.443h2.625v2.067H4.594v-2.067zm2.625 3.444H4.594v2.066h2.625v-2.066zm1.969 0h2.625v2.066H9.188v-2.066zm2.625-3.444H9.188v2.067h2.625v-2.067zM9.188 9.225h2.625v2.066H9.188V9.225zm7.218 6.887h-2.625v2.066h2.625v-2.066zm-2.625-3.444h2.625v2.067h-2.625v-2.067zm2.625-3.443h-2.625v2.066h2.625V9.225z"
+              fill="#A9A9A9" /></svg>
+        </div>
         <label class="search__item" for="adults-field">Взрослые</label>
-        <input class="search-small" type="number" min="1" max="100" step="1" id="adults-field" name="total-adults"
-          placeholder="2" required>
+        <input tabindex="14" class="search-small" type="text" id="adults-field" name="total-adults" placeholder="2"
+          required>
+        <div class="search-rectangle">
+          <svg width="12" height="3" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill="#A9A9A9" d="M0 0h12v3H0z" /></svg>
+        </div>
+        <div class="search-union">
+          <svg width="11" height="11" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M4.23 6.77V11h2.54V6.77H11V4.23H6.77V0H4.23v4.23H0v2.54h4.23z" fill="#A9A9A9" /></svg>
+        </div>
         <label class="search__item" for="children-field">Дети </label>
-        <input class="search-small" type="number" min="1" max="100" step="1" id="children-field" name="total-children"
-          placeholder="0">
+        <input tabindex="15" class="search-small" type="text" id="children-field" name="total-children" placeholder="0">
+        <div class="search-rectangle">
+          <svg width="12" height="3" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill="#A9A9A9" d="M0 0h12v3H0z" /></svg>
+        </div>
+        <div class="search-union">
+          <svg width="11" height="11" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M4.23 6.77V11h2.54V6.77H11V4.23H6.77V0H4.23v4.23H0v2.54h4.23z" fill="#A9A9A9" /></svg>
+        </div>
       </div>
-      <input class="modal__button-search" type="submit" name="find" value="Найти">
-
-
-
+      <input tabindex="16" class="modal__button-search" type="submit" name="find" value="Найти">
     </form>
-
   </div>
-
 </body>
 
 </html>
