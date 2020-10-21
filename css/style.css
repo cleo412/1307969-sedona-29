@@ -1077,22 +1077,14 @@ img {
   fill: var(--main-blue);
 }
 
-/*rectangle*/
-.search__rectangle {
-  font-size: 30px;
-  font-weight: 700;
-  color: var(--new-grey);
-  outline: none;
-  border: none;
-}
-
-/*union*/
+.search__rectangle,
 .search__union {
   font-size: 30px;
   font-weight: 700;
   color: var(--new-grey);
   outline: none;
   border: none;
+  background-color: transparent;
 }
 
 .search__rectangle:hover,
@@ -1108,7 +1100,7 @@ img {
 .search__calendar:focus,
 .search__rectangle:focus,
 .search__union:focus {
-  outline: 1px var(--bright-blue)dotted;
+  outline: 1px var(--bright-blue) dotted;
 }
 
 /*modal__button -2*/
