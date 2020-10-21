@@ -356,15 +356,14 @@ img {
   align-items: center;
   list-style: none;
   background-color: var(--white-9);
-  padding: 17px 57px;
+  padding: 15px 72px;
 }
 
 .page-footer__item {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
-  width: calc(100% / 3);
+  width: 352px;
 }
 
 .page-footer__contacts {
@@ -957,7 +956,7 @@ img {
   display: flex;
   align-items: center;
   background-color: var(--white-9);
-  padding: 17px 55px 25px;
+  padding: 15px 72px;
   margin: 33px 0 0 0;
 }
 
