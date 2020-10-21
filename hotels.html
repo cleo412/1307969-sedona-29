@@ -11,11 +11,9 @@
 <body class="page-body">
   <div class="main-wrapper">
     <header class="main-header">
-      <div class="main-header__logo">
+      <div class="main-header__logo logo-focus">
         <a tabindex="1" href="index.html">
-          <img src="img/logo_main.png" width="138" height="70" alt="Логотип города Седона">
-          <svg width="138" height="70" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M138 0H0l59.51 65.68c5.22 5.761 13.76 5.761 18.98 0L138 0z" fill="#81B3D3" /></svg>
+          <img src="img/logo_main.svg" width="138" height="70" alt="Логотип города Седона">
         </a>
       </div>
       <nav class="main-header__nav">
@@ -38,31 +36,36 @@
             <ul class="filter__options">
               <li class="filter__options-name">Инфраструктура:</li>
               <li class="filter-option">
-                <input class="visually-hidden filter__checkbox" type="checkbox" name="pool" id="filter-pool" checked>
+                <input tabindex="5" class="visually-hidden filter__checkbox" type="checkbox" name="pool"
+                  id="filter-pool" checked>
                 <label for="filter-pool">Бассейн</label>
               </li>
               <li class="filter-option">
-                <input class="visually-hidden filter__checkbox" type="checkbox" name="parking" id="filter-parking">
+                <input tabindex="6" class="visually-hidden filter__checkbox" type="checkbox" name="parking"
+                  id="filter-parking">
                 <label for="filter-parking">Парковка</label>
               </li>
               <li class="filter-option">
-                <input class="visually-hidden filter__checkbox" type="checkbox" name="wi-fi" id="filter-wi-fi">
+                <input tabindex="7" class="visually-hidden filter__checkbox" type="checkbox" name="wi-fi"
+                  id="filter-wi-fi">
                 <label for="filter-wi-fi">Wi-Fi</label>
               </li>
             </ul>
             <ul class="filter__options">
-              <li class="filter__options-name">Тип жилья :</li>
+              <li class="filter__options-name">Тип жилья:</li>
               <li class="filter-option">
-                <input class="visually-hidden filter__checkbox" type="checkbox" name="hotel" id="filter-hotel" checked>
+                <input tabindex="8" class="visually-hidden filter__checkbox" type="checkbox" name="hotel"
+                  id="filter-hotel" checked>
                 <label for="filter-hotel">Гостиница</label>
               </li>
               <li class="filter-option">
-                <input class="visually-hidden filter__checkbox" type="checkbox" name="motel" id="filter-motel" checked>
+                <input tabindex="9" class="visually-hidden filter__checkbox" type="checkbox" name="motel"
+                  id="filter-motel" checked>
                 <label for="filter-motel">Мотель</label>
               </li>
               <li class="filter-option">
-                <input class="visually-hidden filter__checkbox" type="checkbox" name="apartments" id="filter-apartments"
-                  checked>
+                <input tabindex="10" class="visually-hidden filter__checkbox" type="checkbox" name="apartments"
+                  id="filter-apartments" checked>
                 <label for="filter-apartments">Апартаменты</label>
               </li>
             </ul>
@@ -71,11 +74,11 @@
 
               <li class="filter__rublescount">
                 <label>от
-                  <input tabindex="5" class="rublescount-min" type="text" value="0">
+                  <input tabindex="11" class="rublescount-min" type="text" value="0">
                 </label>
                 <span class="filter__rublecount-separation"></span>
                 <label>до
-                  <input tabindex="6" class="rublescount-max" type="text" value="3000">
+                  <input tabindex="12" class="rublescount-max" type="text" value="3000">
                 </label>
               <li class="filter__range">
                 <div class="filter__controls">
@@ -87,29 +90,30 @@
                   </div>
                 </div>
               </li>
-              <li><button tabindex="7" type="submit" class="filter__button">Показать</button>
+              <li>
+                <button tabindex="13" type="submit" class="filter__button">Показать</button>
               </li>
             </ul>
           </form>
         </div>
       </section>
-      <section class="sort">
+      <section class=" sort">
         <!-- sort -->
         <h2 class="visually-hidden">Сортировка результата жилья в Седоне</h2>
         <div class="sort__item-result">Найдено: 3</div>
         <div class="sort__item-title">Сортировка:</div>
         <ol class="sort__items">
-          <li class="sort__item"><button tabindex="8" class="sort__button current-button">По
+          <li class="sort__item"><button tabindex="14" class="sort__button current-button">По
               цене</button></li>
-          <li class="sort__item"><button tabindex="9" class="sort__button">По типу</button></li>
-          <li class="sort__item"><button tabindex="10" class="sort__button">По рейтингу</button></li>
+          <li class="sort__item"><button tabindex="15" class="sort__button">По типу</button></li>
+          <li class="sort__item"><button tabindex="16" class="sort__button">По рейтингу</button></li>
         </ol>
         <div class="sort__item-toggle">
-          <button tabindex="11" class="sort-toggle">
+          <button tabindex="17" class="sort-toggle">
             <svg width="11" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M5.5 0L0 10h11L5.5 0z" fill="#CACACA" /></svg>
           </button>
-          <button tabindex="12" class="sort-toggle current-toggle">
+          <button tabindex="18" class="sort-toggle current-toggle">
             <svg width="11" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M5.5 10L0 0h11" fill="#81B3D2" /></svg>
           </button>
@@ -125,19 +129,15 @@
             </div>
             <div class="hotellist__naming">
               <!-- hotel -->
-              <a tabindex="13" class="hotellist__naming-title" href="#"> Amara Resort & Spa
+              <a tabindex="19" class="hotellist__naming-title" href="#">Amara Resort & Spa
               </a>
               <span class="hotellist__naming-type">Гостиница</span>
               <span class="hotellist__naming-price">от 4000 р.</span>
-              <button tabindex="14" class="button button-details" type="button">Подробнее</button>
-              <button tabindex="15" class="button button-booking" type="button">Забронировать</button>
+              <button tabindex="20" class="button button-details" type="button">Подробнее</button>
+              <button tabindex="21" class="button button-booking" type="button">Забронировать</button>
             </div>
             <div class="hotellist__rating">
               <span class="hotellist__rating-stars">
-                <svg class="rating-disabled" width="19" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878L9.002 0z"
-                    fill="#81B3D2" /></svg>
                 <svg width="19" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878L9.002 0z"
@@ -164,23 +164,15 @@
               <img src="img/desert-2.jpg" width="135" height="90" alt="Фото мотеля Desert Quail Inn">
             </div>
             <div class="hotellist__naming">
-              <a tabindex="16" class="hotellist__naming-title" href="#">Desert Quail Inn
+              <a tabindex="22" class="hotellist__naming-title" href="#">Desert Quail Inn
               </a>
               <span class="hotellist__naming-type">Мотель</span>
               <span class="hotellist__naming-price">от 3000 р.</span>
-              <button tabindex="17" class="button button-details" type="button">Подробнее </button>
-              <button tabindex="18" class="button button-booking" type="button">Забронировать</button>
+              <button tabindex="23" class="button button-details" type="button">Подробнее</button>
+              <button tabindex="24" class="button button-booking" type="button">Забронировать</button>
             </div>
             <div class="hotellist__rating">
               <span class="hotellist__rating-stars">
-                <svg class="rating-disabled" width="19" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878L9.002 0z"
-                    fill="#81B3D2" /></svg>
-                <svg class="rating-disabled" width="19" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878L9.002 0z"
-                    fill="#81B3D2" /></svg>
                 <svg width="19" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878L9.002 0z"
@@ -203,27 +195,15 @@
               <img src="img/villas-3.jpg" width="135" height="90" alt="Фото апартаментов Villas at Poco Diablo">
             </div>
             <div class="hotellist__naming">
-              <a tabindex="19" class="hotellist__naming-title" href="#">Villas at Poco Diablo
+              <a tabindex="25" class="hotellist__naming-title" href="#">Villas at Poco Diablo
               </a>
               <span class="hotellist__naming-type">Апартаменты</span>
               <span class="hotellist__naming-price">от 2000 р.</span>
-              <button tabindex="20" class="button button-details" type="button">Подробнее</button>
-              <button tabindex="21" class="button button-booking" type="button">Забронировать</button>
+              <button tabindex="26" class="button button-details" type="button">Подробнее</button>
+              <button tabindex="27" class="button button-booking" type="button">Забронировать</button>
             </div>
             <div class="hotellist__rating">
               <span class="hotellist__rating-stars">
-                <svg class="rating-disabled" width="19" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878L9.002 0z"
-                    fill="#81B3D2" /></svg>
-                <svg class="rating-disabled" width="19" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878L9.002 0z"
-                    fill="#81B3D2" /></svg>
-                <svg class="rating-disabled" width="19" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878L9.002 0z"
-                    fill="#81B3D2" /></svg>
                 <svg width="19" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878L9.002 0z"
@@ -243,15 +223,15 @@
       <!-- footer-->
       <section class="page-footer__item page-footer__contacts">
         <h2 class="visually-hidden">Контакты</h2>
-        <div class="page-footer__contacts-link"><a tabindex="22" href="#">#visitSEDONA</a></div>
-        <div class="page-footer__contacts-tel"><a tabindex="23" href="tel:+74956660166">Тел: +7(495)
+        <div class="page-footer__contacts-link"><a tabindex="28" href="#">#visitSEDONA</a></div>
+        <div class="page-footer__contacts-tel"><a tabindex="29" href="tel:+74956660166">Тел: +7(495)
             666-01-66</a></div>
       </section>
-      <section class="page-footer__item page-footer__social">
+      <section class="page-footer__item">
         <h2 class="visually-hidden">Мы в соцсетях</h2>
         <ul class="page-footer__social-items">
           <li class="page-footer__social-item">
-            <a tabindex="24" class="page-footer__button" href="#">
+            <a tabindex="30" class="page-footer__button" href="#">
               <span class="visually-hidden">Твитер</span>
               <svg class="button-social" width="17" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -260,14 +240,14 @@
             </a>
           </li>
           <li class="page-footer__social-item">
-            <a tabindex="25" class="page-footer__button" href="#">
+            <a tabindex="31" class="page-footer__button" href="#">
               <span class="visually-hidden">Фейсбук</span>
               <svg class="button-social" width="12" height="22" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M12 4V0H8a4 4 0 00-4 4v4H0v4h4v10h4V12h4V8H8V4h4z" fill="#fff" /></svg>
             </a>
           </li>
           <li class="page-footer__social-item">
-            <a tabindex="26" class="page-footer__button" href="#">
+            <a tabindex="32" class="page-footer__button" href="#">
               <span class="visually-hidden">Ютуб</span>
               <svg class="button-social" width="20" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -277,9 +257,9 @@
           </li>
         </ul>
       </section>
-      <section class="page-footer__item page-footer__copy">
+      <section class="page-footer__item">
         <h2 class="visually-hidden"> Копирайт</h2>
-        <a tabindex="27" class="page-footer__copy-text" href="https://htmlacademy.ru/intensive/htmlcss">
+        <a tabindex="33" class="page-footer__copy-text" href="https://htmlacademy.ru/intensive/htmlcss">
           <p>Website by</p>
           <svg width="115" height="41" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" clip-rule="evenodd"
