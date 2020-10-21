@@ -1051,7 +1051,6 @@ img {
 
 .search__input:hover {
   background-color: var(--smoky-grey);
-  border-color: var(--smoky-grey);
 }
 
 .search__input:focus {
