@@ -38,7 +38,7 @@
   --super-gray: #bdbbbc;
   --dull-grey: #666666;
   --grey-02: rgba(0, 1, 1, 0.2);
-  --grey-015: #rgba(0, 1, 1, 0.15);
+  --grey-015: rgba(0, 1, 1, 0.15);
   --smoky-grey: #ebebeb;
   --basic-grey: #e5e5e5;
   --aluminum-grey: #ababab;
@@ -179,7 +179,7 @@ img {
   height: 509px;
   background-color: var(--main-grey);
   background-repeat: no-repeat;
-  background-image: url("../img/welcome.png"), url("../img/bg__photo.jpg");
+  background-image: url("../img/welcome.png"), url("../img/bg_photo.jpg");
   background-position: center, center;
   margin: 0 0;
 }
@@ -619,7 +619,7 @@ img {
   top: 0;
   width: 23px;
   height: 23px;
-  background-image: url("../img/checkbox-off.svg");
+  background-image: url("../img/checkbox_off.svg");
   background-position: 0 0;
 }
 
@@ -630,7 +630,7 @@ img {
   top: 0;
   width: 23px;
   min-height: 23px;
-  background-image: url("../img/checkbox-off-disabled.svg");
+  background-image: url("../img/checkbox_off_disabled.svg");
   background-position: 0 0;
 }
 
@@ -641,7 +641,7 @@ img {
   top: 0;
   width: 27px;
   height: 23px;
-  background-image: url("../img/checkbox-on-checked.svg");
+  background-image: url("../img/checkbox_on_checked.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -653,7 +653,7 @@ img {
   top: 0;
   width: 27px;
   min-height: 23px;
-  background-image: url("../img/checkbox-on-checked-disabled.svg");
+  background-image: url("../img/checkbox_on_checked_disabled.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -748,7 +748,7 @@ img {
 
 .rublescount-min:focus,
 .rublescount-max:focus {
-  background-color: var(--bright-blue);
+  background-color: transparent;
 }
 
 .filter__range {
@@ -1394,7 +1394,7 @@ img {
 /*calendar*/
 .search__calendar {
   position: absolute;
-  top: 8px;
+  top: 6px;
   right: 3px;
   background-color: transparent;
   border: none;
