@@ -29,7 +29,6 @@
     <main class="page-main">
       <h1 class="visually-hidden">Форма поиска и результат поиска жилья в Седоне</h1>
       <section class="filter">
-        <!-- bg-->
         <h2 class="visually-hidden">Фильтры стоимости и инфраструктуры жилья в Седоне</h2>
         <div class="filter__img-muddy">
           <form class="filter__form" action="https://echo.htmlacademy.ru/" method="get">
@@ -73,9 +72,11 @@
               <li class="filter__options-name">Стоимость в сутки&nbsp;(р):</li>
               <li class="filter__rublescount">
                 <label for="count-min">от</label>
-                <input tabindex="11" class="rublescount-min" id="count-min" type="text" placeholder="0">
+                <input tabindex="11" class="filter__rublescount-min" id="count-min" type="text" name="rublescount-min"
+                  placeholder="0">
                 <label for="count-max">до</label>
-                <input tabindex="12" class="rublescount-max" id="count-max" type="text" placeholder="3000">
+                <input tabindex="12" class="filter__rublescount-max" id="count-max" type="text" name="rublescount-max"
+                  placeholder="3000">
               <li class="filter__range">
                 <div class="filter__controls">
                   <div class="filter__price-scale">
@@ -94,7 +95,6 @@
         </div>
       </section>
       <section class=" sort">
-        <!-- sort -->
         <h2 class="visually-hidden">Сортировка результата жилья в Седоне</h2>
         <div class="sort__item-result">Найдено: 3</div>
         <div class="sort__item-title">Сортировка:</div>
@@ -105,12 +105,12 @@
           <li class="sort__item"><button tabindex="16" class="sort__button">По рейтингу</button></li>
         </ol>
         <div class="sort__item-toggle">
-          <button tabindex="17" class="sort-toggle" aria-label="отсортировать вверх">
+          <button tabindex="17" class="sort-toggle" aria-label="отсортировать от большего к меньшему">
             <svg aria-hidden="true" focusable="false" width="11" height="10" fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <path d="M5.5 0L0 10h11L5.5 0z" fill="#CACACA" /></svg>
           </button>
-          <button tabindex="18" class="sort-toggle current-toggle" aria-label="отсортировать вниз">
+          <button tabindex="18" class="sort-toggle current-toggle" aria-label="отсортировать меньшего к большему">
             <svg aria-hidden="true" focusable="false" width="11" height="10" fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <path d="M5.5 10L0 0h11" fill="#81B3D2" /></svg>
@@ -118,7 +118,6 @@
         </div>
       </section>
       <section class="hotellist">
-        <!-- hotellist  -->
         <h2 class="visually-hidden">Результат поиска жилья в Седоне</h2>
         <ul class="hotellist__items">
           <li class="hotellist__item">
@@ -126,7 +125,6 @@
               <img src="img/amara_1.jpg" width="135" height="90" alt="Фото отеля Amara Resort & Spa">
             </div>
             <div class="hotellist__naming">
-              <!-- hotel -->
               <a tabindex="19" class="hotellist__naming-title" href="#">Amara Resort & Spa
               </a>
               <span class="hotellist__naming-type">Гостиница</span>
@@ -161,7 +159,6 @@
             </div>
           </li>
           <li class="hotellist__item motel-item">
-            <!-- motel -->
             <div class="motel-item__img">
               <img src="img/desert_2.jpg" width="135" height="90" alt="Фото мотеля Desert Quail Inn">
             </div>
@@ -195,7 +192,6 @@
             </div>
           </li>
           <li class="hotellist__item apartment-item">
-            <!-- apartment -->
             <div class="apartment-item__img">
               <img src="img/villas_3.jpg" width="135" height="90" alt="Фото апартаментов Villas at Poco Diablo">
             </div>
@@ -226,8 +222,7 @@
         </ul>
       </section>
     </main>
-    <footer class="page-footer-hotels">
-      <!-- footer-->
+    <footer class="page-footer">
       <section class="page-footer__item page-footer__contacts">
         <h2 class="visually-hidden">Контакты</h2>
         <div class="contacts-link"><a tabindex="28" href="#">#visitSEDONA</a></div>
